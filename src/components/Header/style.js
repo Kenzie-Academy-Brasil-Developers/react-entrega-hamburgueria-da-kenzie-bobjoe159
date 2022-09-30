@@ -35,6 +35,7 @@ export const DivContent = styled.div`
         border-radius: 8px;
         padding: 11.5px 20px;
         color: #FFFFFF;
+        cursor: pointer;
     }
 
 

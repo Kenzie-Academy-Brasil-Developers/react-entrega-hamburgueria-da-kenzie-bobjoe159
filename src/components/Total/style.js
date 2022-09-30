@@ -29,5 +29,6 @@ export const TotalDiv = styled.div`
         border-radius: 8px;
         color: #828282;
         margin-top: 20px;
+        cursor: pointer;
     }
 `

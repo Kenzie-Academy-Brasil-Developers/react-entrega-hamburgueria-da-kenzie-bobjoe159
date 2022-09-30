@@ -28,4 +28,9 @@ export const CartLi = styled.li`
         color: #BDBDBD;
         margin-top: 20px;
     }
+
+    .cardContent > button:hover {
+        cursor: pointer;
+    }
+    
 `

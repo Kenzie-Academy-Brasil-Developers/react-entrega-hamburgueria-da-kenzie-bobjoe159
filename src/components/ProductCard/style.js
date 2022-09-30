@@ -48,5 +48,6 @@ export const ProductDiv = styled.div`
         border: none;
         border-radius: 8px;
         margin-top: 14px;
+        cursor: pointer;
     }
 `

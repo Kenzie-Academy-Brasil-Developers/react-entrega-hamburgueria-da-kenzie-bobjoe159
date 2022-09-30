@@ -1,5 +1,7 @@
 import React from 'react'
 import { CardDiv } from './style'
+import CartItem from '../CartItem'
+import Total from '../Total'
 
 export default function Cart() {
   return (
@@ -17,19 +19,11 @@ export default function Cart() {
                 </p>
             </> */}
             <>
-                <div className='cardContent'>
-                    <img src="../../hamburguer.png" alt="" />
-                    <div>
-                        <h3>Hamburguer</h3>
-                        <p>Sanduíches</p>
-                    </div>
-                    <button>Remover</button>
-                </div>
-                <div className='totalValue'>
-                    <p>Total</p>
-                    <span>R$ 40,00</span>
-                </div>
-                <button className="removeAllButton">Remover todos</button>
+                <ul>
+                    <CartItem/>
+                </ul>
+
+                <Total/>
             </>
         </section>
     </CardDiv>

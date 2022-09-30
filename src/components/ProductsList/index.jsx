@@ -7,6 +7,9 @@ export default function ProductList() {
     <ProductsList> 
       <ProductCard/>
       <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
     </ProductsList>
   )
 }

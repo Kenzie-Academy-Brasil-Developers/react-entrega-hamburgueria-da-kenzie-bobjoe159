@@ -1,16 +1,15 @@
-import './App.css';
+import './App.js';
 import Header from './components/Header'
-import ProductsList from './components/ProductsList'
-import Cart from './components/Cart'
 import { GlobalStyle } from './global'
+import './App'
+import Dashboard from './components/Dashboard/index.jsx';
 
 function App() {
   return (
     <div className="App">
       <GlobalStyle/>
       <Header/>
-      <ProductsList/>
-      <Cart/>
+      <Dashboard/>
     </div>
   );
 }

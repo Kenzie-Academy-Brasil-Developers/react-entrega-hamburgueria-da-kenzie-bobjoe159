@@ -8,7 +8,7 @@ export const ProductDiv = styled.div`
     background: #FFFFFF;
     border: 2px solid #E0E0E0;
     border-radius: 5px;
-    min-width: 340px;
+    min-width: 250px;
 
     div {
         padding: 26px 21px;

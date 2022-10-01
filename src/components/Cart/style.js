@@ -5,8 +5,15 @@ export const CardDiv = styled.div`
     margin-top: 20px;
 
     ul {
-        max-height: 300px;
+        height: 250px;
         overflow-x: auto;
+    }
+
+    .emptyDiv {
+        min-height: 150px;
+        width: 336px;
+        overflow-x: auto;
+        padding-top: 50px;
     }
 
     h2 {

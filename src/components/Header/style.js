@@ -23,13 +23,13 @@ export const DivContent = styled.div`
         margin-top: 15px;
     }
 
-    div > input {
+    div > form input {
         background-color: transparent;
         outline: none;
         border: none;
     }
 
-    div > button {
+    div > form button {
         background: #27AE60;
         border: 2px solid #27AE60;
         border-radius: 8px;

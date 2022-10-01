@@ -22,7 +22,9 @@ export default function Header({products, setFilteredProduct}) {
 
   return (
     <DivContent>
-        <img src="../../burguerKenzie.png" alt="" />
+        <img onClick={()=> {
+          setFilteredProduct(products)
+        }}src="../../burguerKenzie.png" alt="" />
         <div>
           <form onSubmit={handleSearch}>
             <input type="search" onChange={(event) => setSearch(event.target.value)}placeholder='Digite sua pesquisa'/>

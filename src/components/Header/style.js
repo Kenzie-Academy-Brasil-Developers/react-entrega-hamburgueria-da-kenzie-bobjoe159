@@ -10,6 +10,7 @@ export const DivContent = styled.div`
 
     img {
         margin: auto;
+        cursor: pointer;
     }
 
     div {

@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
 import { TotalDiv } from './style'
+import 'animate.css';
 
 export default function Total({cartItem, setCartItem}) {
 
@@ -9,7 +9,7 @@ export default function Total({cartItem, setCartItem}) {
   }, 0)
 
   return (
-    <TotalDiv>
+    <TotalDiv className='animate__animated animate__fadeIn'>
         <div className='totalValue'>
         <p>Total</p>
         <span>R$ {totalSum.toFixed(2)}</span>

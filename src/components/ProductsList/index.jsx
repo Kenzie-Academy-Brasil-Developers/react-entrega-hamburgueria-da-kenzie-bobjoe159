@@ -1,10 +1,11 @@
 import React from 'react'
 import ProductCard from '../ProductCard'
 import { ProductsList } from './style'
+import 'animate.css'
 
 export default function ProductList({products, cartItem, setCartItem}) {
   return (
-    <ProductsList> 
+    <ProductsList className='animate__animated animate__fadeIn'> 
       {
         products.map(product => 
           <ProductCard key={product.id} product={product} products={products} cartItem={cartItem} setCartItem={setCartItem} />

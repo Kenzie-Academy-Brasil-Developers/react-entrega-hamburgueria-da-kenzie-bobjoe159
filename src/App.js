@@ -23,7 +23,7 @@ function App() {
       <GlobalStyle/>
       <Header products={products} setFilteredProduct={setFilteredProduct}/>
       {
-        filteredProduct.length == 0 ?
+        filteredProduct.length === 0 ?
         <Dashboard products={products} cartItem={cartItem} setCartItem={setCartItem}  />
         :
         <Dashboard products={filteredProduct} cartItem={cartItem} setCartItem={setCartItem}  />

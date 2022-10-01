@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { DivContent } from './style'
+import 'animate.css'
 
 export default function Header({products, setFilteredProduct}) {
 
@@ -22,10 +23,10 @@ export default function Header({products, setFilteredProduct}) {
 
   return (
     <DivContent>
-        <img onClick={()=> {
+        <img className="animate__animated animate__fadeInLeft" onClick={()=> {
           setFilteredProduct(products)
         }}src="../../burguerKenzie.png" alt="" />
-        <div>
+        <div className="animate__animated animate__fadeInRight">
           <form onSubmit={handleSearch}>
             <input type="search" onChange={(event) => setSearch(event.target.value)}placeholder='Digite sua pesquisa'/>
             <button type="submit">Pesquisar</button>

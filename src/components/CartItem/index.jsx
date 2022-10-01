@@ -1,5 +1,6 @@
 import React from 'react'
 import { CartLi } from './style'
+import 'animate.css'
 
 export default function CartItem({cartProduct, cartItem, setCartItem}) {
 
@@ -15,7 +16,7 @@ export default function CartItem({cartProduct, cartItem, setCartItem}) {
 }
 
   return (
-    <CartLi>
+    <CartLi className="animate__animated animate__backInRight">
         <div className='cardContent'>
             <img src={cartProduct.img} alt="" />
             <div>

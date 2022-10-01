@@ -6,7 +6,7 @@ export const CardDiv = styled.div`
 
     ul {
         height: 250px;
-        overflow-x: auto;
+        overflow-x: hidden;
     }
 
     .emptyDiv {

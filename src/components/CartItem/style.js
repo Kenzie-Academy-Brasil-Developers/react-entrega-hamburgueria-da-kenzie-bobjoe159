@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const CartLi = styled.li`
+
     .cardContent {
         display: flex;
         justify-content: space-between;

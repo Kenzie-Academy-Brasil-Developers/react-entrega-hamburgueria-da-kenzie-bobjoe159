@@ -13,7 +13,7 @@ export const DivContent = styled.div`
         cursor: pointer;
     }
 
-    div {
+    form {
         display: flex;
         justify-content: space-between;
         width: 100%;

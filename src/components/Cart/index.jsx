@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { CardDiv } from './style'
 import CartItem from '../CartItem'
 import Total from '../Total'
 import 'animate.css'
 
 export default function Cart({cartItem, setCartItem}) {
+
+    const [totalValue, setTotal ] = useState([])
+
   return (
     <CardDiv className="animate__animated animate__fadeInRight">
         <h2>
@@ -26,10 +29,10 @@ export default function Cart({cartItem, setCartItem}) {
             <>
                 <ul>
                     {cartItem.map(cartProduct => 
-                    <CartItem key={cartProduct.id} cartProduct={cartProduct} cartItem={cartItem} setCartItem={setCartItem}/>)}
+                    <CartItem key={cartProduct.id} cartProduct={cartProduct} cartItem={cartItem} setCartItem={setCartItem} totalValue={totalValue} setTotal={setTotal}/>)}
                 </ul>
 
-                <Total cartItem={cartItem} setCartItem={setCartItem}/>
+                <Total cartItem={cartItem} setCartItem={setCartItem} />
             </>
             }
         </section>

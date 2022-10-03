@@ -1,37 +1,50 @@
-import React from 'react'
-import { useState } from 'react'
-import { DivContent } from './style'
-import 'animate.css'
+import React from "react";
+import { useState } from "react";
+import { DivContent } from "./style";
+import "animate.css";
 
-export default function Header({products, setFilteredProduct}) {
+export default function Header({ products, setFilteredProduct }) {
+  const [search, setSearch] = useState("");
 
-  const [search, setSearch] = useState('')
-
-  let arraySearch = []
+  let arraySearch = [];
 
   function handleSearch(event) {
-    event.preventDefault()
-    products.forEach(item => {
-      let searchLower = search.toLowerCase()
-      let itemLower = item.name.toLowerCase()
-      if(itemLower.includes(searchLower)) {
-        arraySearch.push(item)
+    event.preventDefault();
+    products.forEach((item) => {
+      console.log(item);
+      let searchLower = search.toLowerCase();
+      let itemLower = item.name.toLowerCase();
+      let itemCategory = item.category.toLowerCase();
+      if (
+        itemLower.includes(searchLower) ||
+        itemCategory.includes(searchLower)
+      ) {
+        arraySearch.push(item);
       }
-    })
-    setFilteredProduct(arraySearch)
+    });
+    setFilteredProduct(arraySearch);
   }
 
   return (
     <DivContent>
-        <img className="animate__animated animate__fadeInLeft" onClick={()=> {
-          setFilteredProduct(products)
-        }}src="../../burguerKenzie.png" alt="" />
-        <div className="animate__animated animate__fadeInRight">
-          <form onSubmit={handleSearch}>
-            <input type="search" onChange={(event) => setSearch(event.target.value)}placeholder='Digite sua pesquisa'/>
-            <button type="submit">Pesquisar</button>
-          </form>
-        </div>
+      <img
+        className="animate__animated animate__fadeInLeft"
+        onClick={() => {
+          setFilteredProduct(products);
+        }}
+        src="../../burguerKenzie.png"
+        alt=""
+      />
+      <div className="animate__animated animate__fadeInRight">
+        <form onSubmit={handleSearch}>
+          <input
+            type="search"
+            onChange={(event) => setSearch(event.target.value)}
+            placeholder="Digite sua pesquisa"
+          />
+          <button type="submit">Pesquisar</button>
+        </form>
+      </div>
     </DivContent>
-  )
+  );
 }

@@ -42,7 +42,7 @@ export default function CartItem({
         >
           +
         </button>
-        <span>{quantity}</span>
+        {/* <span>{quantity}</span> */}
         <button
           onClick={() => {
             setQuantity(quantity - 1);

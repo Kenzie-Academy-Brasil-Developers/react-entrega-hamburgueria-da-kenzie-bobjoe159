@@ -11,7 +11,6 @@ export default function Header({ products, setFilteredProduct }) {
   function handleSearch(event) {
     event.preventDefault();
     products.forEach((item) => {
-      console.log(item);
       let searchLower = search.toLowerCase();
       let itemLower = item.name.toLowerCase();
       let itemCategory = item.category.toLowerCase();

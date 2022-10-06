@@ -21,10 +21,6 @@ export default function CartItem({
     setCartItem(arrSuporte);
   }
 
-  useEffect(() => {
-    console.log(totalValue);
-  });
-
   const [quantity, setQuantity] = useState(1);
 
   return (
